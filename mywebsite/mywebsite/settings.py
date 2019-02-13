@@ -2,7 +2,7 @@ import sys
 
 
 # production: IN_DEVELOPMENT == False, development: IN_DEVELOPMENT == True
-IN_DEVELOPMENT = True
+IN_DEVELOPMENT = False
 
 
 # path to environment settings in development
