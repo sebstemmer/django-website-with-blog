@@ -1,0 +1,247 @@
+{% extends "mainpage/base.html" %}
+
+<!-- static tag of django -->
+{% load static %}
+
+{% block meat %}
+
+<!-- styling -->
+<link href="{% static 'mainpage/css/header.min.css' %}" rel="stylesheet"> <!-- index -->
+<link href="{% static 'mainpage/css/aboutme.min.css' %}" rel="stylesheet"> <!-- aboutme -->
+<link href="{% static 'mainpage/css/cv.min.css' %}" rel="stylesheet"> <!-- cv -->
+<link href="{% static 'mainpage/css/contact.min.css' %}" rel="stylesheet"> <!-- contact -->
+
+
+<!-- Header -->
+<header class="masthead" style="background-image: url({% static 'mainpage/img/header/header-bg.jpeg' %});">
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in">Freelance Software Developer</div>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#aboutme">TELL ME MORE</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- About Me -->
+<section id="aboutme">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="section-heading text-uppercase">About Me</h1>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="aboutme_photo">
+          <img class="mx-auto rounded-circle" src="{% static 'mainpage/img/aboutme/me.jpg' %}" alt="">
+          <h4 class="mb-3">Sebastian Stemmer</h4>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://github.com/sebastianstemmer">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.xing.com/profile/Sebastian_Stemmer6/">
+                <i class="fab fa-xing"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/sebastian-stemmer/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8 text-left mt-3">
+        <p>I am currently working as a freelance software developer in Bonn, Germany using key technologies like Django,
+          Python, JavaScript and Bootstrap.</p>
+        <p>Before, I was working on many different projects mostly in research, from cryptography utilizing the physical
+          layer of wireless networks to detecting slow moving targets with enhanced radar signal processing
+          techniques. </p>
+        <p>If you think I can help you with your software project, web page or Python project, just contact me and maybe
+          we can work together!</p>
+        <p>I also recommend checking out my <a href="{% url 'techblog_index' %}">tech blog</a> for interesting articles
+          on web development, Linux, servers and more!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CV -->
+<section id="cv" class="bg-light cv_cd-timeline cv_js-cd-timeline">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="section-heading text-uppercase">CV</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <div class="cv_cd-timeline__container">
+
+          <div class="cv_cd-timeline__block cv_js-cd-block">
+            <div class="cv_cd-timeline__img cv_cd-timeline__img--work cv_js-cd-img">
+              <img src="{% static 'mainpage/img/cv/cv_work_icon.svg' %}" alt="education">
+            </div>
+
+            <div class="cv_cd-timeline__content cv_js-cd-content">
+              <h5 class="cv_cd-timeline__date text-muted">07/2018 - present</h5>
+              <h5>Freelance software developer</h5>
+              <p class="text-muted">Web development with Django, Bootstrap, JavaScript, Amazon RDS, PostgreSQL, Angular,
+                PHP, HTML5, CSS, Gulp.js, and Python</p>
+            </div>
+          </div>
+
+          <div class="cv_cd-timeline__block cv_js-cd-block">
+            <div class="cv_cd-timeline__img cv_cd-timeline__img--work cv_js-cd-img">
+              <img src="{% static 'mainpage/img/cv/cv_work_icon.svg' %}" alt="education">
+            </div>
+
+            <div class="cv_cd-timeline__content cv_js-cd-content">
+              <h5 class="text-muted cv_cd-timeline__date">01/2017 - 06/2018</h5>
+              <h5>Research Fellow</h5>
+              <p class="text-muted"><i>Fraunhofer FHR</i></p>
+              <p class="text-muted">Radar signal processing algorithms, MATLAB, Git, and C/C++</p>
+            </div>
+          </div>
+
+          <div class="cv_cd-timeline__block cv_js-cd-block">
+            <div class="cv_cd-timeline__img cv_cd-timeline__img--work cv_js-cd-img">
+              <img src="{% static 'mainpage/img/cv/cv_work_icon.svg' %}" alt="education">
+            </div>
+
+            <div class="cv_cd-timeline__content cv_js-cd-content">
+              <h5 class="text-muted cv_cd-timeline__date">03/2015 - 08/2015</h5>
+              <h5>Student trainee<br>(Master's thesis)</h5>
+              <p class="text-muted"><i>Airbus Defence and Space GmbH</i></p>
+              <p class="text-muted">Cryptography, signal processing algorithms, MATLAB, and C/C++</p>
+            </div>
+          </div>
+
+          <div class="cv_cd-timeline__block cv_js-cd-block">
+            <div class="cv_cd-timeline__img cv_cd-timeline__img--work cv_js-cd-img">
+              <img src="{% static 'mainpage/img/cv/cv_work_icon.svg' %}" alt="education">
+            </div>
+
+            <div class="cv_cd-timeline__content cv_js-cd-content">
+              <h5 class="cv_cd-timeline__date text-muted">05/2014 – 02/2015</h5>
+              <h5>Honors project</h5>
+              <p class="text-muted"><i>In cooperation with General Electric</i></p>
+              <p class="text-muted">Sapiens – A New Generation MR Spectroscopy Processing, Analysis and Visualization
+                Software</p>
+              <p class="text-muted">Software design patterns, C/C++, and Git</p>
+            </div>
+          </div>
+
+          <div class="cv_cd-timeline__block cv_js-cd-block">
+            <div class="cv_cd-timeline__img cv_cd-timeline__img--education cv_js-cd-img">
+              <img src="{% static 'mainpage/img/cv/cv_education_icon.svg' %}" alt="education">
+            </div> <!-- cv_cd-timeline__img -->
+
+            <div class="cv_cd-timeline__content cv_js-cd-content">
+              <h5 class="cv_cd-timeline__date text-muted">10/2013 – 11/2015</h5>
+              <h5>MS (Hons), Computational Science and Engineering</h5>
+              <p class="text-muted"><i>Technical University of Munich</i></p>
+              <p class="text-muted">Master's thesis: Physical Layer Security for Aeronautical Applications</p>
+              <p class="text-muted">Numerical methods, high-performance computing, MATLAB, C/C++, Java, and Python</p>
+            </div>
+          </div>
+
+          <div class="cv_cd-timeline__block cv_js-cd-block">
+            <div class="cv_cd-timeline__img cv_cd-timeline__img--education cv_js-cd-img">
+              <img src="{% static 'mainpage/img/cv/cv_education_icon.svg' %}" alt="education">
+            </div>
+
+            <div class="cv_cd-timeline__content cv_js-cd-content">
+              <h5 class="cv_cd-timeline__date text-muted">10/2010 – 08/2013</h5>
+              <h5>BS, Physics</h5>
+              <p class="text-muted"><i>Ludwig Maximilian University of Munich</i></p>
+              <p class="text-muted">Bachelor's thesis: Transport Phenomena in Cold Fermi Gases</p>
+              <p class="text-muted">Mathematics, theoretical physics, numerical methods, and C/C++</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- end of CV -->
+
+
+<!-- Contact -->
+<section id="contact" style="background-image: url({% static 'mainpage/img/contact/map-image.png' %});">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="section-heading text-uppercase">Contact Me</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form id="contact_form" action="" method="post">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                {{ form.name }}
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                {{ form.email }}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                {{ form.subject }}
+              </div>
+              <div class="form-group">
+                {{ form.message }}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="form-check">
+                <label id="contact_privacy_checkbox" class="form-check-label text-left">{{ form.checkbox }}
+                  <div id="contact_privacy_note">I have read the <a href="{% url 'privacy_en' %}">Privacy Policy</a>. I
+                    agree that my details and data will be collected and stored electronically to answer my
+                    request.</br>Note: You can revoke your consent at any time for the future via email to
+                    contact.stemmer@gmail.com.
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-lg-12 text-center">
+              <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+
+<!-- Custom scripts for this template -->
+<script src="{% static 'mainpage/js/index.min.js' %}"></script>
+<script src="{% static 'mainpage/js/cv.min.js' %}"></script>
+
+{% endblock %}

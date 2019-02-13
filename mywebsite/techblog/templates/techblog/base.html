@@ -1,0 +1,61 @@
+{% extends "mainpage/static_nav_base.html" %}
+
+<!-- static tag of django -->
+{% load static %}
+
+<!-- wagtail tags -->
+{% load wagtailcore_tags %}
+
+<!-- custom tags -->
+{% load categories_tags %}
+
+{% block meat %}
+
+<!-- styling -->
+<link rel="stylesheet" href="{% static 'techblog/css/base.min.css' %}">
+
+<!-- urls -->
+{% url 'techblog_search_index' as techblog_search_index %}
+
+<section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        {% block coleightcont %}{% endblock %}
+      </div>
+
+      <div class="col-md-4">
+        <!-- Search Widget -->
+        <!-- <div class="card my-4"> -->
+        <div class="card">
+          <h5 class="card-header">Search</h5>
+          <div class="card-body">
+            <form action="{{ techblog_search_index }}" method="get" class="form-inline">
+              <div class="input-group">
+                <input id="techblog_base_searchfor" type="text" name="query" class="form-control" placeholder="Search for..."
+                       value="{{ search_query }}">
+                <div class="input-group-append">
+                  <button class="btn btn-primary text-uppercase" type="submit">Go!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Categories</h5>
+          <div class="card-body">
+            <div class="row">
+              {% categories %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% endblock %}

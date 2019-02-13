@@ -1,0 +1,15 @@
+{% extends "techblog/index_base.html" %}
+
+{% block indexBaseTitle %}
+
+  {% if not empty_search %}
+    {% if blogpages %}
+      Showing search results for query "{{ search_query }}"
+    {% else %}
+      No results found for query "{{ search_query }}"
+    {% endif %}
+  {% else %}
+    Please type something into the search box!
+  {% endif %}
+
+{% endblock %}

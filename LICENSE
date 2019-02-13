@@ -1,0 +1,215 @@
+Copyright © 2019 Sebastian Stemmer
+
+---
+
+In several files inside the directory
+
+mywebsite/mainpage/
+
+is included a modified (by me, Sebastian Stemmer) version of "Agency" (a Bootstrap theme) by "Blackrock Digital LLC" from
+
+https://startbootstrap.com/themes/agency/
+
+and licensed under:
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2019 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+see: https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE
+
+---
+
+In several files inside the directory
+
+mywebsite/techblog/
+
+is included a modified (by me, Sebastian Stemmer) version of "Blog Home" (a Bootstrap theme) by "Blackrock Digital LLC" from
+
+https://startbootstrap.com/templates/blog-home/
+
+and licensed under:
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2019 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+see: https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE
+
+---
+
+In several files inside the directory
+
+mywebsite/techblog/
+
+is included a modified (by me, Sebastian Stemmer) version of "Blog Post" (a Bootstrap theme) by "Blackrock Digital LLC" from
+
+https://startbootstrap.com/templates/blog-post/
+
+and licensed under:
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2019 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+see: https://github.com/BlackrockDigital/startbootstrap-blog-post/blob/master/LICENSE
+
+---
+
+The icon
+
+cv_work_icon.svg
+
+in
+
+mywebsite/mainpage/static/mainpage/img/cv/cv_work_icon.svg
+
+is a modified (by me, Sebastian Stemmer) version of "Ic, work icon" from
+
+https://www.iconfinder.com/icons/3669401/ic_work_icon
+
+and licensed under:
+
+The MIT License (MIT)
+
+---
+
+The icon
+
+cv_education_icon.svg
+
+in
+
+mywebsite/mainpage/static/mainpage/img/cv/cv_education_icon.svg
+
+is a modified (by me, Sebastian Stemmer) version of "Book icon" from
+
+https://www.iconfinder.com/icons/298731/book_icon
+
+and licensed under:
+
+The MIT License (MIT)
+
+---
+
+In the files
+
+- mywebsite/mainpage/templates/mainpage/index.html (section CV)
+- mywebsite/mainpage/static/mainpage/css/cv.css
+- mywebsite/mainpage/static/mainpage/css/cv.min.css
+- mywebsite/mainpage/static/mainpage/js/cv.js
+- mywebsite/mainpage/static/mainpage/js/cv.min.js
+
+is included a modified (by me, Sebastian Stemmer) version of "Vertical Timeline" by "Amber Creative Lab, Ltd." from
+
+https://codyhouse.co/gem/vertical-timeline/
+
+and licensed under:
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2019 Amber Creative Lab, Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+see: https://github.com/CodyHouse/codyhouse-framework/blob/master/LICENSE.md
+
+---
+
+The image
+
+header-bg.jpeg
+
+in
+
+mywebsite/mainpage/static/mainpage/img/header/header-bg.jpeg
+
+is a modified version of the nameless original by Sathesh D
+
+from
+
+https://www.pexels.com/de-de/foto/arbeitsplatz-briefe-buchstaben-drinnen-698808/
+
+and licensed under:
+
+Pexels License
+
+see: https://www.pexels.com/photo-license/
+
+---
+
+The privacy policy in the files
+
+- mywebsite/mainpage/templates/mainpage/privacy_de.html (German version)
+- mywebsite/mainpage/templates/mainpage/privacy_en.html (English version)
+
+was generated by
+
+https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html
+
+which is a generator from "Anwaltskanzlei Weiß & Partner" (their webpage: https://www.ratgeberrecht.eu/).

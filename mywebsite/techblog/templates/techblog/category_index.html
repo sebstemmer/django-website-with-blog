@@ -1,0 +1,13 @@
+{% extends "techblog/index_base.html" %}
+
+{% block indexBaseTitle %}
+    {% if request.GET.category|length %}
+        {% if blogpages %}
+            Showing posts in "{{ request.GET.category }}"
+        {% else %}
+            No posts found in "{{ request.GET.category }}"
+        {% endif %}
+    {% else %}
+        No category specified!
+    {% endif %}
+{% endblock %}

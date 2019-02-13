@@ -1,0 +1,9 @@
+{
+  "author": "Sebastian Stemmer",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^1.4.0"
+  }
+}

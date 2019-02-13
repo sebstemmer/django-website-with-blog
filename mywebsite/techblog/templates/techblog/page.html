@@ -1,0 +1,61 @@
+{% extends "techblog/base.html" %}
+
+<!-- static tag of django -->
+{% load static %}
+
+<!-- wagtail tags -->
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block coleightcont %}
+
+<!-- urls -->
+{% url 'techblog_tag_index' as techblog_tag_index %}
+{% url 'techblog_category_index' as techblog_category_index %}
+{% url 'techblog_index' as techblog_index %}
+
+<!-- styling -->
+<link rel="stylesheet" href="{% static 'techblog/css/page.min.css' %}">
+
+<h1>{{ page.title }}</h1>
+{% with categories=page.categories.all %}
+{% if categories %}
+<ul style="padding: 0;">
+  in
+  {% spaceless %}
+  {% for category in categories %}
+  <li style="display: inline;">{% if not forloop.first %}{% if forloop.last %}, and {% else %}, {% endif %}{% endif %}<a
+      href="{{ techblog_category_index }}?category={{ category.name }}">{{ category.name }}</a></li>
+  {% endfor %}
+  {% endspaceless %}
+</ul>
+{% endif %}
+{% endwith %}
+
+{% if page.tags.all.count %}
+<div class="tags">
+  {% for tag in page.tags.all %}
+  <a href="{{ techblog_tag_index }}?tag={{ tag }}">#{{ tag }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+
+<hr>
+<p>Posted on {{ page.specific.date }}, by Sebastian Stemmer</p>
+<hr>
+{% with page.specific.main_image as main_image %}
+{% if main_image %}{% image main_image fill-900x300 class="img-fluid rounded" %}{% endif %}
+{% endwith %}
+
+<p class="mt-4"><i>{{ page.intro|richtext }}</i></p>
+
+<div id="techblog_page_body">
+  {{ page.body }}
+</div>
+
+<hr>
+<p>Any questions, problems or suggestions for improvement?</p>
+<p>Write me an <a href="mailto:contact.stemmer@gmail.com">email</a> or use the <a href="{% url 'index' %}#contact">contact form</a>!</p>
+
+<p><a href="{{ techblog_index }}" class="btn btn-primary text-uppercase">Return to blog</a></p>
+
+{% endblock %}

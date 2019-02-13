@@ -1,0 +1,21 @@
+<!-- urls -->
+{% url 'techblog_category_index' as techblog_category_index %}
+
+<div class="col-lg-6">
+    <ul class="list-unstyled mb-0">
+        {% for leftCategory in leftColCategories %}
+        <li>
+            <a href="{{ techblog_category_index }}?category={{ leftCategory.name }}">{{ leftCategory.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="col-lg-6">
+    <ul class="list-unstyled mb-0">
+        {% for rightCategory in rightColCategories %}
+        <li>
+            <a href="{{ techblog_category_index }}?category={{ rightCategory.name }}">{{ rightCategory.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

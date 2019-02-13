@@ -1,0 +1,37 @@
+.btn {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.btn-xl {
+  font-size: 0.9rem; /* default: 18px */
+  padding: 10px 20px; /* default: 20px 40 px */
+}
+
+@media (min-width: 767px) {
+  .btn {
+    font-size: 1rem;
+  }
+
+  .btn-xl {
+    font-size: 1.125rem;
+    padding: 20px 40px;
+  }
+}
+
+.btn-primary {
+  background-color: var(--color-three);
+  border-color: var(--color-three);
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: var(--color-four) !important;
+  border-color: var(--color-four) !important;
+  color: var(--color-six);
+}
+
+.btn-primary:active, .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}

@@ -1,0 +1,13 @@
+{% extends "techblog/index_base.html" %}
+
+{% block indexBaseTitle %}
+    {% if request.GET.tag|length %}
+        {% if blogpages %}
+            Showing posts tagged "{{ request.GET.tag }}"
+        {% else %}
+            No posts found with the tag "{{ request.GET.tag }}"
+        {% endif %}
+    {% else %}
+        No tag specified!
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,85 @@
+#contact_privacy_checkbox {
+  color: var(--color-six);
+  margin-bottom: 20px;
+}
+
+#contact_privacy_note {
+  margin-left: 5px;
+}
+
+section#contact {
+  background-color: var(--color-one);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section#contact .section-heading {
+  color: var(--color-six);
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 7px; /* default: 20px */
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 100px; /* default: 248px */
+}
+
+section#contact .form-control:focus {
+  border-color: var(--color-three);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+section#contact ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: var(--color-seven);
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+section#contact :-moz-placeholder {
+  font-weight: 700;
+  color: var(--color-seven);
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+section#contact ::-moz-placeholder {
+  font-weight: 700;
+  color: var(--color-seven);
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+section#contact :-ms-input-placeholder {
+  font-weight: 700;
+  color: var(--color-seven);
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#id_name, #id_email, #id_subject, #id_message {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 767px) {
+
+  section#contact .form-group textarea.form-control {
+    height: 200px; /* default: 248px */
+  }
+
+  section#contact .form-group input, section#contact .form-group textarea {
+    padding: 14px; /* default: 20px */
+  }
+
+  #id_name, #id_email, #id_subject, #id_message {
+    font-size: 1rem;
+  }
+
+}

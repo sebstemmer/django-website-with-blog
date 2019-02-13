@@ -1,0 +1,37 @@
+{% extends "techblog/base.html" %}
+
+<!-- wagtail tags -->
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<!-- static tag of django -->
+{% load static %}
+
+{% block coleightcont %}
+
+<h1 class="section-heading text-uppercase">{% block indexBaseTitle %}{% endblock %}</h1>
+
+{% for post in blogpages %}
+{% with post=post.specific %}
+<div class="card mb-4">
+  {% with post.main_image as main_image %}
+  {% if main_image %}{% image main_image fill-750x300 class="card-img-top" %}{% endif %}
+  {% endwith %}
+  <div class="card-body">
+    <h2 class="card-title">{{ post.title }}</h2>
+    <p class="card-text"><i>{{ post.intro|richtext }}</i></p>
+    <a href="{% pageurl post %}" class="btn btn-primary text-uppercase">Read More</a>
+  </div>
+  <div class="card-footer text-muted">
+    Posted on {{ post.date }}, by Sebastian Stemmer
+  </div>
+</div>
+{% endwith %}
+{% endfor %}
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="{% static 'techblog/js/index_base.min.js' %}"></script>
+
+{% endblock %}

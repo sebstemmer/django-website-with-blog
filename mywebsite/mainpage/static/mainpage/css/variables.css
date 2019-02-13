@@ -1,0 +1,12 @@
+:root {
+  /* colors */
+  --color-one: #212529; /* very dark blue, use: background color */
+  --color-two: #fec503; /* vivid yellow, use: active link and link hover */
+  --color-three: #fed136; /* bright yellow, use: links, nav hover and background */
+  --color-four: #fec810; /* vivid yellow, use: buttons */
+  --color-five: #e9ecef; /* light grayish blue, use: backgrounds */
+  --color-six: white; /* white, use: text and background */
+  --color-seven: #ced4da; /* light grayish blue, use: contact form */
+  /* page design */
+ /* --page-padding-left-and-right: 20vw;*/
+}

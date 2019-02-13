@@ -1,0 +1,52 @@
+{% extends "mainpage/static_nav_base.html" %}
+
+<!-- static tag of django -->
+{% load static %}
+
+{% block meat %}
+
+<!-- styling -->
+<link rel="stylesheet" href="{% static 'mainpage/css/legalnotice.min.css' %}">
+
+<!-- content -->
+
+<section>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <h1 class="legalnotice_heading text-uppercase">Impressum</h1>
+        <a href="{% url 'legalnotice_en' %}">Auf Englisch lesen</a>
+        <h3 class="legalnotice_subheading">Diese Webseite wird betrieben von:</h3>
+        <table id="legalnotice_table" class="table table-borderless">
+          <tbody>
+          <tr>
+            <td>Name:</td>
+            <td>Sebastian Stemmer</td>
+          </tr>
+          <tr>
+            <td>Adresse:</td>
+            <td>{{ PRIVATE_DATA_STREET }}<br>53111 Bonn<br>Germany</td>
+          </tr>
+          <tr>
+            <td>Telefon:</td>
+            <td>{{ PRIVATE_DATA_PHONE }}</td>
+          </tr>
+          <tr>
+            <td>E-Mail:</td>
+            <td>contact.stemmer@gmail.com</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock %}

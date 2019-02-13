@@ -1,0 +1,51 @@
+{% extends "mainpage/static_nav_base.html" %}
+
+<!-- static tag of django -->
+{% load static %}
+
+{% block meat %}
+
+<!-- styling -->
+<link rel="stylesheet" href="{% static 'mainpage/css/legalnotice.min.css' %}">
+
+<!-- content -->
+<section>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <h1 class="legalnotice_heading text-uppercase">Legal Notice</h1>
+        <a href="{% url 'legalnotice_de' %}">Read in German</a>
+        <h3 class="legalnotice_subheading">This web page is operated by:</h3>
+        <table id="legalnotice_table" class="table table-borderless">
+          <tbody>
+          <tr>
+            <td>Name:</td>
+            <td>Sebastian Stemmer</td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td>{{ PRIVATE_DATA_STREET }}<br>53111 Bonn<br>Germany</td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td>{{ PRIVATE_DATA_PHONE }}</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>contact.stemmer@gmail.com</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock %}
