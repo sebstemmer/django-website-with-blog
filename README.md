@@ -5,7 +5,7 @@
 [![Bootstrap Version](https://img.shields.io/badge/Bootstrap-4.2.1-brightgreen.svg)](https://getbootstrap.com/)
 [![Gulp Version](https://img.shields.io/badge/gulp.js-4.0.0-brightgreen.svg)](https://gulpjs.com/) 
 
-Live-Demo: [www.sebastian-stemmer.com](www.sebastian-stemmer.com)
+Live-Demo: [sebastian-stemmer.com](https://sebastian-stemmer.com/)
 
 ## Features
 
@@ -172,8 +172,13 @@ That's it! All other settings, like the setup of your production database, the c
 
 - Initial version
 
+### 1.0.1
+
+- some changes in README.md
+- fixed package in requirements_prod.txt
+
 ## License
 
 Copyright © 2019 Sebastian Stemmer
 
-Take a look at the license file LICENSE.
+Take a look at the license file [LICENSE](https://github.com/sebastianstemmer/django-website-with-blog/blob/master/LICENSE).
