@@ -178,6 +178,11 @@ That's it! All other settings, like the setup of your production database, the c
 - some changes in README.md
 - fixed package in requirements_prod.txt
 
+### 1.0.2
+
+- small changes in CV content
+- small changes in README.md
+
 ## License
 
 Copyright © 2019 Sebastian Stemmer
