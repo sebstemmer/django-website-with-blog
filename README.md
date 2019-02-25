@@ -3,7 +3,8 @@
 [![Django Version](https://img.shields.io/badge/Django-2.1.5-brightgreen.svg)](https://www.djangoproject.com/)
 [![Wagtail Version](https://img.shields.io/badge/Wagtail-2.4-brightgreen.svg)](https://wagtail.io/)
 [![Bootstrap Version](https://img.shields.io/badge/Bootstrap-4.2.1-brightgreen.svg)](https://getbootstrap.com/)
-[![Gulp Version](https://img.shields.io/badge/gulp.js-4.0.0-brightgreen.svg)](https://gulpjs.com/) 
+[![gulp.js Version](https://img.shields.io/badge/gulp.js-4.0.0-brightgreen.svg)](https://gulpjs.com/) 
+[![jQuery Version](https://img.shields.io/badge/jQuery-3.3.1-brightgreen.svg)](https://jquery.com/) 
 
 Live-Demo: [sebastian-stemmer.com](https://sebastian-stemmer.com/)
 
